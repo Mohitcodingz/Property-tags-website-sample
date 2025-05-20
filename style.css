@@ -1,0 +1,213 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0 8px 80px 8px;
+  background: #f9f9fb;
+  color: #222;
+}
+h1, h2 {
+  margin-top: 2em;
+}
+h2 {
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: .25em;
+}
+section {
+  margin-bottom: 2em;
+}
+.demo-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5em;
+  gap: 1em;
+}
+.container {
+  display: flex;
+  background: #fff;
+  border: 1px solid #eee;
+  min-width: 220px;
+  min-height: 50px;
+  margin: 8px 0;
+  padding: 4px;
+}
+.item {
+  background: #7dafff;
+  color: #fff;
+  margin: 2px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.item.wide {
+  min-width: 120px;
+}
+.item.small {
+  min-width: 40px;
+  min-height: 40px;
+}
+.tall { height: 80px; }
+.short { height: 30px; }
+code {
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.96em;
+  white-space: pre-line;
+}
+.fp-demo .item.fp-grow { flex: 2; }
+.fp-demo .item { flex: 1; }
+.fp-basis-demo .item { flex: 1; }
+.fp-basis-demo .item:first-child { flex-basis: 100px; }
+
+.fd-row { flex-direction: row; }
+.fd-column { flex-direction: column; }
+.fd-row-reverse { flex-direction: row-reverse; }
+.fd-column-reverse { flex-direction: column-reverse; }
+
+.fw-wrap { flex-wrap: wrap; min-width: 280px; }
+.fw-nowrap { flex-wrap: nowrap; min-width: 280px; }
+.fw-wrap-reverse { flex-wrap: wrap-reverse; min-width: 280px; }
+
+.ac-space-between { flex-wrap: wrap; align-content: space-between; height: 110px; }
+.ac-center { flex-wrap: wrap; align-content: center; height: 110px; }
+.ac-stretch { flex-wrap: wrap; align-content: stretch; height: 110px; }
+
+.jc-center { justify-content: center; }
+.jc-space-between { justify-content: space-between; }
+.jc-flex-end { justify-content: flex-end; }
+
+.ai-center { align-items: center; height: 100px; }
+.ai-stretch { align-items: stretch; height: 100px; }
+.ai-flex-start { align-items: flex-start; height: 100px; }
+
+.box {
+  background: #e0e7ff;
+  border-radius: 6px;
+  margin: 8px;
+  padding: 10px;
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+  font-weight: 500;
+}
+.margin-demo { margin: 20px; }
+.padding-demo { padding: 18px; }
+.border-demo { border: 2px solid black; }
+.lh-demo { line-height: 1.6; max-width: 320px; }
+.ta-center { text-align: center; }
+.td-none { text-decoration: none; }
+.td-underline { text-decoration: underline; }
+.td-line-through { text-decoration: line-through; }
+
+.display-demo { margin: 10px 0; }
+.db-block { display: block; background: #b7e4c7; margin-bottom: 6px; }
+.db-inline { display: inline; background: #ffd6a5; padding: 2px 8px;}
+.db-flex { display: flex; gap: 8px; background: #b2f7ef; }
+
+.block-demo {
+  display: block;
+  background: #c8b6ff;
+  margin: 3px 0;
+  padding: 4px 8px;
+}
+.inline-demo {
+  display: inline;
+  background: #f8bbd0;
+  padding: 2px 6px;
+  margin: 0 3px;
+  border-radius: 3px;
+}
+.inline-demo img { vertical-align: middle; }
+
+.pos-demo {
+  position: relative;
+  height: 200px;
+  background: #f0f0fa;
+  margin-bottom: 16px;
+}
+.pos-absolute {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #ffab91;
+}
+.pos-relative {
+  position: relative;
+  left: 40px;
+  top: 24px;
+  background: #b2f7ef;
+}
+.pos-fixed {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background: #bbd0ff;
+  z-index: 999;
+}
+.pos-sticky {
+  position: sticky;
+  top: 0;
+  background: #ffc6ff;
+}
+.pos-zindex.pos-behind {
+  position: absolute;
+  left: 120px;
+  top: 60px;
+  background: #bdb2ff;
+  z-index: 1;
+  width: 80px;
+}
+.pos-zindex.pos-front {
+  position: absolute;
+  left: 140px;
+  top: 80px;
+  background: #ffb4a2;
+  z-index: 2;
+  width: 80px;
+}
+
+.overflow-auto {
+  width: 110px; height: 50px; overflow: auto;
+}
+.overflow-hidden {
+  width: 110px; height: 50px; overflow: hidden;
+}
+.overflow-scroll {
+  width: 110px; height: 50px; overflow: scroll;
+}
+
+.cursor-pointer { cursor: pointer; }
+.cursor-wait { cursor: wait; }
+
+.transition-demo {
+  transition: all 0.3s ease;
+  background: #afc6e9;
+}
+.transition-demo:hover {
+  background: #a0c4ff;
+  color: #fff;
+  transform: scale(1.08);
+}
+
+.hover-demo {
+  background: #bde0fe;
+  transition: background 0.3s;
+}
+.hover-demo:hover {
+  background: #1e40af;
+  color: #fff;
+}
+
+.transform-scale { transform: scale(1.2); }
+.transform-rotate { transform: rotate(15deg); }
+.transform-translate { transform: translateX(30px); }
+
+.visibility-visible { visibility: visible; }
+.visibility-hidden { visibility: hidden; }
+
+footer {
+  margin-top: 48px;
+  font-size: .9em;
+  color: #555;
+  text-align: center;
+}
