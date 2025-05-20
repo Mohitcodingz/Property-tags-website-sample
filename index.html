@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Flexbox & Core Properties Demonstrator</title>
+  <link rel="stylesheet" href="tags.css"/>
+</head>
+<body>
+  <h1>CSS Flexbox & Core Properties Playground</h1>
+  <p>This page demonstrates the use and effect of every property/tag you listed. Each section shows a live example and the corresponding code.</p>
+
+  <!-- 1. flex-direction -->
+  <section>
+    <h2>1. flex-direction</h2>
+    <div class="demo-group">
+      <div class="container fd-row">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+      </div>
+      <code>
+.container { display: flex; flex-direction: row; }
+      </code>
+    </div>
+    <div class="demo-group">
+      <div class="container fd-column">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+      </div>
+      <code>
+.container { display: flex; flex-direction: column; }
+      </code>
+    </div>
+    <div class="demo-group">
+      <div class="container fd-row-reverse">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+      </div>
+      <code>
+.container { display: flex; flex-direction: row-reverse; }
+      </code>
+    </div>
+    <div class="demo-group">
+      <div class="container fd-column-reverse">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+      </div>
+      <code>
+.container { display: flex; flex-direction: column-reverse; }
+      </code>
+    </div>
+  </section>
+
+  <!-- 2. flex-wrap -->
+  <section>
+    <h2>2. flex-wrap</h2>
+    <div class="demo-group">
+      <div class="container fw-nowrap">
+        <div class="item wide">1</div>
+        <div class="item wide">2</div>
+        <div class="item wide">3</div>
+      </div>
+      <code>
+.container { display: flex; flex-wrap: nowrap; }
+      </code>
+    </div>
+    <div class="demo-group">
+      <div class="container fw-wrap">
+        <div class="item wide">1</div>
+        <div class="item wide">2</div>
+        <div class="item wide">3</div>
+      </div>
+      <code>
+.container { display: flex; flex-wrap: wrap; }
+      </code>
+    </div>
+    <div class="demo-group">
+      <div class="container fw-wrap-reverse">
+        <div class="item wide">1</div>
+        <div class="item wide">2</div>
+        <div class="item wide">3</div>
+      </div>
+      <code>
+.container { display: flex; flex-wrap: wrap-reverse; }
+      </code>
+    </div>
+  </section>
+
+  <!-- 3. align-content -->
+  <section>
+    <h2>3. align-content</h2>
+    <div class="demo-group">
+      <div class="container ac-space-between">
+        <div class="item small">1</div>
+        <div class="item small">2</div>
+        <div class="item small">3</div>
+        <div class="item small">4</div>
+        <div class="item small">5</div>
+        <div class="item small">6</div>
+      </div>
+      <code>
+.container { flex-wrap: wrap; align-content: space-between; }
+      </code>
+    </div>
+    <div class="demo-group">
+      <div class="container ac-center">
+        <div class="item small">1</div>
+        <div class="item small">2</div>
+        <div class="item small">3</div>
+        <div class="item small">4</div>
+        <div class="item small">5</div>
+        <div class="item small">6</div>
+      </div>
+      <code>
+.container { flex-wrap: wrap; align-content: center; }
+      </code>
+    </div>
+    <div class="demo-group">
+      <div class="container ac-stretch">
+        <div class="item small">1</div>
+        <div class="item small">2</div>
+        <div class="item small">3</div>
+        <div class="item small">4</div>
+        <div class="item small">5</div>
+        <div class="item small">6</div>
+      </div>
+      <code>
+.container { flex-wrap: wrap; align-content: stretch; }
+      </code>
+    </div>
+  </section>
+
+  <!-- 4. justify-content -->
+  <section>
+    <h2>4. justify-content</h2>
+    <div class="demo-group">
+      <div class="container jc-center">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+      </div>
+      <code>
+.container { justify-content: center; }
+      </code>
+    </div>
+    <div class="demo-group">
+      <div class="container jc-space-between">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+      </div>
+      <code>
+.container { justify-content: space-between; }
+      </code>
+    </div>
+    <div class="demo-group">
+      <div class="container jc-flex-end">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+      </div>
+      <code>
+.container { justify-content: flex-end; }
+      </code>
+    </div>
+  </section>
+
+  <!-- 5. align-items -->
+  <section>
+    <h2>5. align-items</h2>
+    <div class="demo-group" style="height: 120px;">
+      <div class="container ai-center">
+        <div class="item tall">1</div><div class="item">2</div><div class="item short">3</div>
+      </div>
+      <code>
+.container { align-items: center; }
+      </code>
+    </div>
+    <div class="demo-group" style="height: 120px;">
+      <div class="container ai-stretch">
+        <div class="item tall">1</div><div class="item">2</div><div class="item short">3</div>
+      </div>
+      <code>
+.container { align-items: stretch; }
+      </code>
+    </div>
+    <div class="demo-group" style="height: 120px;">
+      <div class="container ai-flex-start">
+        <div class="item tall">1</div><div class="item">2</div><div class="item short">3</div>
+      </div>
+      <code>
+.container { align-items: flex-start; }
+      </code>
+    </div>
+  </section>
+
+  <!-- 6-8. margin, padding, border -->
+  <section>
+    <h2>6-8. margin, padding, border</h2>
+    <div class="demo-group">
+      <div class="box margin-demo">margin</div>
+      <code>.box { margin: 20px; }</code>
+    </div>
+    <div class="demo-group">
+      <div class="box padding-demo">padding</div>
+      <code>.box { padding: 10px; }</code>
+    </div>
+    <div class="demo-group">
+      <div class="box border-demo">border</div>
+      <code>.box { border: 2px solid black; }</code>
+    </div>
+  </section>
+
+  <!-- 9. line-height -->
+  <section>
+    <h2>9. line-height</h2>
+    <p class="lh-demo">
+      This is a paragraph with increased line height.<br>
+      Each line is further apart from the next.
+    </p>
+    <code>p { line-height: 1.6; }</code>
+  </section>
+
+  <!-- 10. text-align -->
+  <section>
+    <h2>10. text-align</h2>
+    <h3 class="ta-center">Centered Heading</h3>
+    <code>h1 { text-align: center; }</code>
+  </section>
+
+  <!-- 11. text-decoration -->
+  <section>
+    <h2>11. text-decoration</h2>
+    <a href="#" class="td-none">No Underline Link</a>
+    <code>a { text-decoration: none; }</code>
+    <a href="#" class="td-underline">Underlined Link</a>
+    <code>a { text-decoration: underline; }</code>
+    <a href="#" class="td-line-through">Line-through Link</a>
+    <code>a { text-decoration: line-through; }</code>
+  </section>
+
+  <!-- 12. display -->
+  <section>
+    <h2>12. display</h2>
+    <div class="display-demo">
+      <div class="db-block">Block Element</div>
+      <span class="db-inline">Inline Element</span>
+      <div class="db-flex">
+        <div>Flex 1</div><div>Flex 2</div>
+      </div>
+    </div>
+    <code>
+div { display: block; }<br>
+span { display: inline; }<br>
+div { display: flex; }
+    </code>
+  </section>
+
+  <!-- 13. Block-level tags -->
+  <section>
+    <h2>13. Block-level tags</h2>
+    <div class="block-demo">div (block)</div>
+    <p class="block-demo">p (block)</p>
+    <section class="block-demo">section (block)</section>
+    <article class="block-demo">article (block)</article>
+    <header class="block-demo">header (block)</header>
+    <footer class="block-demo">footer (block)</footer>
+  </section>
+
+  <!-- 14. Inline-level tags -->
+  <section>
+    <h2>14. Inline-level tags</h2>
+    <span class="inline-demo">span</span>
+    <a class="inline-demo" href="#">a</a>
+    <strong class="inline-demo">strong</strong>
+    <em class="inline-demo">em</em>
+    <img class="inline-demo" src="https://placekitten.com/30/30" alt="img"/>
+  </section>
+
+  <!-- 15. Flex properties -->
+  <section>
+    <h2>15. Flex properties</h2>
+    <div class="container fp-demo">
+      <div class="item fp-grow">flex: 2</div>
+      <div class="item">flex: 1</div>
+      <div class="item">flex: 1</div>
+    </div>
+    <code>.item { flex: 1; } .item.fp-grow { flex: 2; }</code>
+    <div class="container fp-basis-demo">
+      <div class="item" style="flex-basis: 100px;">flex-basis: 100px</div>
+      <div class="item">flex: 1</div>
+    </div>
+    <code>.item { flex-basis: 100px; }</code>
+  </section>
+
+  <!-- 16-18. position, top/right/bottom/left, z-index -->
+  <section>
+    <h2>16-18. position, top/right/bottom/left, z-index</h2>
+    <div class="pos-demo">
+      <div class="box pos-absolute">absolute</div>
+      <div class="box pos-relative">relative</div>
+      <div class="box pos-fixed">fixed</div>
+      <div class="box pos-sticky">sticky (scroll)</div>
+      <div class="box pos-zindex pos-behind">z-index: 1</div>
+      <div class="box pos-zindex pos-front">z-index: 2</div>
+    </div>
+  </section>
+
+  <!-- 19. overflow -->
+  <section>
+    <h2>19. overflow</h2>
+    <div class="box overflow-auto">auto<br>auto<br>auto<br>auto<br>auto<br>auto<br>auto</div>
+    <code>.box { overflow: auto; }</code>
+    <div class="box overflow-hidden">hidden<br>hidden<br>hidden<br>hidden<br>hidden<br>hidden<br>hidden</div>
+    <code>.box { overflow: hidden; }</code>
+    <div class="box overflow-scroll">scroll<br>scroll<br>scroll<br>scroll<br>scroll<br>scroll<br>scroll</div>
+    <code>.box { overflow: scroll; }</code>
+  </section>
+
+  <!-- 20. cursor -->
+  <section>
+    <h2>20. cursor</h2>
+    <button class="cursor-pointer">Pointer Cursor</button>
+    <code>button { cursor: pointer; }</code>
+    <button class="cursor-wait">Wait Cursor</button>
+    <code>button { cursor: wait; }</code>
+  </section>
+
+  <!-- 21. transition -->
+  <section>
+    <h2>21. transition</h2>
+    <div class="box transition-demo">Hover me</div>
+    <code>.box { transition: all 0.3s ease; }</code>
+  </section>
+
+  <!-- 22. :hover -->
+  <section>
+    <h2>22. :hover</h2>
+    <button class="hover-demo">Hover me!</button>
+    <code>button:hover { background-color: blue; }</code>
+  </section>
+
+  <!-- 23. transform -->
+  <section>
+    <h2>23. transform</h2>
+    <div class="box transform-scale">scale(1.2)</div>
+    <div class="box transform-rotate">rotate(15deg)</div>
+    <div class="box transform-translate">translateX(30px)</div>
+    <code>
+.box { transform: scale(1.2); }<br>
+.box { transform: rotate(15deg); }<br>
+.box { transform: translateX(30px); }
+    </code>
+  </section>
+
+  <!-- 24. visibility -->
+  <section>
+    <h2>24. visibility</h2>
+    <div class="box visibility-visible">Visible</div>
+    <div class="box visibility-hidden">Hidden (but space kept)</div>
+    <code>.box { visibility: hidden; }</code>
+  </section>
+
+  <footer>
+    <p>Made as a CSS demonstration project.</p>
+  </footer>
+</body>
+</html>
